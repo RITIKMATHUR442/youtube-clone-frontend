@@ -1,0 +1,130 @@
+/* Advanced CSS for Upload Component (YouTube-inspired Theme) */
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* Container styling */
+.upload-container {
+    max-width: 655px;
+    margin: 40px auto;
+    padding: 52px;
+    background-color: #363535;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.upload-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+h2 {
+    text-align: center;
+    color: #fff7f7;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    /* color: #ff0000; YouTube red for a title */
+}
+
+/* Form inputs and textareas */
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for form inputs */
+.upload-form input[type="text"]:focus,
+.upload-form textarea:focus,
+.upload-form select:focus {
+    border-color: #ff0000; /* YouTube red for focus */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Label styling */
+.upload-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* File input */
+.upload-form input[type="file"] {
+    border: none;
+    margin-top: 5px;
+}
+
+/* Thumbnail styling */
+.thumbnail {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(90deg, #ff0000, #cc0000); /* YouTube red gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #cc0000, #990000);
+    transform: translateY(-3px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .upload-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button[type="submit"] {
+        padding: 14px;
+    }
+
+    .thumbnail {
+        max-height: 180px;
+    }
+}

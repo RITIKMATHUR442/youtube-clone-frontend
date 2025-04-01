@@ -1,0 +1,590 @@
+.main-wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(86, 82, 82);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper{
+  width: 50%;
+  height: 90vh;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px, 5px, 15px rgb(56, 55, 55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+
+}
+.c-name{
+  color: rgb(255, 255, 255);
+}
+.logo-image{
+  width: 8%;
+}
+.wrapper-header{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-wrapper input{
+  width: 80%;
+  padding: 10px;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+}
+.form-wrapper button{
+height: 50px;
+padding: 10px;  
+border: none;
+width: 80%;
+background-color: rgb(171, 16, 16);
+color: white;
+border-radius: 5px;
+
+}
+
+.preview-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.link{
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.content-container{
+  width: 80%;
+  padding: 5px;
+}
+.profile-container img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 5px, 5px, 15px rgb(196, 193, 193);
+}
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.menu-container{
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+.menu-link
+{
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+
+}
+
+.active-menu-link
+{
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  background-color: red;
+
+}
+.menu-link:hover
+{
+  background-color: red;
+}
+/* Advanced CSS for Upload Component */
+
+/* body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+.upload-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.upload-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form textarea:focus,
+.upload-form select:focus {
+    border-color: #007BFF;
+}
+
+.upload-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+.upload-form input[type="file"] {
+    border: none;
+    margin-top: 5px;
+}
+
+.thumbnail {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .upload-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+    }
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+my css make it advance
+with the based on youtube theme
+/* Advanced CSS for Upload Component */
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.upload-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form textarea:focus,
+.upload-form select:focus {
+    border-color: #007BFF;
+}
+
+.upload-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+.upload-form input[type="file"] {
+    border: none;
+    margin-top: 5px;
+}
+
+.thumbnail {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .upload-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+    }
+}
+
+/* my videos */
+/* YouTube Theme Colors */
+
+/* Container Styling */
+.my-videos-container {
+  padding: 20px;
+  background-color: #181818; /* YouTube-like dark background */
+  color: #ffffff; /* Light text for contrast */
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: auto; /* Add horizontal scroll for very small screens */
+}
+
+/* Table Styling */
+.videos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #202020; /* Slightly lighter dark for the table background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  overflow: hidden;
+  border-radius: 8px; /* Rounded edges */
+}
+
+.videos-table th,
+.videos-table td {
+  text-align: left;
+  border: 1px solid #303030; /* Border with dark gray */
+  padding: 12px;
+  color: #e0e0e0; /* Soft white text */
+}
+
+.videos-table th {
+  background-color: #282828; /* Darker gray for headers */
+  color: #ff0000; /* YouTube red for header text */
+  font-size: 16px;
+}
+
+.videos-table td {
+  font-size: 14px;
+  vertical-align: middle; /* Align text with thumbnails */
+}
+
+.videos-table tbody tr:nth-child(even) {
+  background-color: #252525; /* Alternate row color for better readability */
+}
+channel-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10;
+}
+/* Thumbnail Styling */
+.videos-table td img {
+  width: 80px; /* Fixed thumbnail width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Smooth edges */
+  border: 1px solid #ff0000; /* Red border for thumbnails */
+}
+
+/* Button Styling */
+.videos-table button {
+  background-color: #ff0000; /* YouTube red */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.videos-table button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Hover Effects */
+.videos-table tbody tr:hover {
+  background-color: #333333; /* Slightly brighter gray on row hover */
+}
+
+.videos-table td:hover {
+  color: #ffffff; /* Bright white text when hovering over cells */
+  transition: color 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .videos-table th,
+  .videos-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .videos-table td img {
+    width: 70px;
+  }
+
+  .videos-table button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-table th,
+  .videos-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .videos-table td img {
+    width: 60px;
+  }
+
+  .videos-table button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .videos-table {
+    font-size: 12px;
+  }
+
+  .videos-table th,
+  .videos-table td {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .videos-table td img {
+    width: 50px;
+  }
+
+  .videos-table button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Stack the table on small screens for better usability */
+  .videos-table {
+    display: block;
+    /* overflow-x: auto; Add scroll on smaller screens */
+  }
+
+  .videos-table th,
+  .videos-table td {
+    display: block;
+    width: 100%; /* Full-width rows */
+    text-align: left;
+    padding: 6px 4px;
+  }
+
+  .videos-table td img {
+    width: 40px;
+  }
+
+  .videos-table button {
+    padding: 3px 6px;
+    font-size: 9px;
+  }
+}
+
+.channel-logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+}
+
+
+
+/* Wrapper Styles */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* overflow: scroll; */
+}
+
+/* Video and Comment Section */
+.video-and-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.video-box {
+  width: 600px;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+}
+
+.channel-logo {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+Channel Info
+.channel-info {
+  display: flex;
+  height: 150px;
+  width: 100px;
+  align-items: center;
+}
+
+.channel-info span {
+color: red;
+font-size: 12px;
+margin: 10px;
+}
+
+.channel-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10;
+}
+.video-title{
+  font-size: 20px;
+}
+
+.description{
+  color: grey;
+}
+.subscribe-btn{
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+}
